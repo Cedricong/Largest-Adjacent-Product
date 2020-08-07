@@ -1,0 +1,17 @@
+function adjacentElementsProduct(inputArray) {
+  var highestNum= inputArray[0] * inputArray[1];
+  for (var i =1; i<inputArray.length; i++){
+    highestNum= Math.max(highestNum, inputArray[i] * inputArray[i-1]);
+  }
+  return highestNum;
+} 
+
+function adjacentElementsProduct(inputArray) {
+  var highestNum= inputArray[0] * inputArray[1];
+  for (var i =1; i<inputArray.length; i++){
+// Can use this if you know the function Math.max() , if not you may do the normal if else
+   if (inputArray[i] * inputArray[i-1] > highestNumber){
+ highestNumber = inputputArray[i] * inputArray[i-1];
+  }
+  return highestNum;
+} 
